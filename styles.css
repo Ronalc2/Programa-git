@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 2%;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: url('fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color:blue;
+  }
+  
+  header {
+    background-color: yellowgreen;
+    color: #fff;
+    padding: 1em 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    width: 100px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-left: 15px;
+  }
+  
+  nav ul li button {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  main {
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 2em auto;
+    max-width: 800px;
+    border-radius: 10px;
+  }
+  
+  .seccion {
+    display: none;
+  }
+  
+  .seccion.activa {
+    display: block;
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+    margin-top: 1em;
+  }
+  
+  .productos, .galeria {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  footer {
+    position: relative;
+    background-color: #333333c0;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  .redes-sociales img {
+    width: 30px;
+    margin: 0 5px;
+  }
+  

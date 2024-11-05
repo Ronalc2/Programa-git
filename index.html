@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AluDiseños</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Encabezado con Logo y Navegación -->
+  <header>
+    <nav>
+      <img src="logo.jpg" alt="Logo de AluDiseños" class="logo">
+      <ul>
+        <li><button onclick="mostrarSeccion('inicio')">Inicio</button></li>
+        <li><button onclick="mostrarSeccion('servicios')">Servicios</button></li>
+        <li><button onclick="mostrarSeccion('galeria')">Galería</button></li>
+        <li><button onclick="mostrarSeccion('contacto')">Contacto</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Secciones de Contenido -->
+  <main>
+    <!-- Sección Inicio -->
+    <section id="inicio" class="seccion activa">
+      <h2>Bienvenido a AluDiseños</h2>
+      <p>Especialistas en diseño y fabricación de productos de aluminio y acero.</p>
+      <div class="form-container">
+        <form id="login-form">
+          <h3>Iniciar Sesión</h3>
+          <input type="text" placeholder="Usuario" required>
+          <input type="password" placeholder="Contraseña" required>
+          <button type="submit">Ingresar</button>
+        </form>
+        <form id="signup-form">
+          <h3>Crear Cuenta</h3>
+          <input type="text" placeholder="Usuario" required>
+          <input type="email" placeholder="Email" required>
+          <input type="password" placeholder="Contraseña" required>
+          <button type="submit">Registrar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="seccion oculto">
+      <h2>Nuestros Servicios</h2>
+      <div class="productos">
+        <div class="producto">
+          <img src="ventana.jpg" alt="Ventana">
+          <p>Ventana de aluminio - $300.000</p>
+        </div>
+        <div class="producto">
+          <img src="puerta.jpg" alt="Puerta">
+          <p>Puerta de aluminio - $500.000</p>
+        </div>
+        <div class="producto">
+          <img src="baranda.jpg" alt="Baranda">
+          <p>Baranda de aluminio - $400.000</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Galería -->
+    <section id="galeria" class="seccion oculto">
+      <h2>Galería de Proyectos</h2>
+      <div class="galeria">
+        <img src="proyecto1.jpg" alt="Proyecto 1">
+        <img src="proyecto2.jpg" alt="Proyecto 2">
+        <img src="proyecto3.jpg" alt="Proyecto 3">
+      </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="seccion oculto">
+      <h2>Contáctanos</h2>
+      <p>Teléfono: +57 300 123 4567</p>
+      <p>Dirección: Calle 123 #45-67, Ciudad</p>
+      <p>Email: contacto@aludisenos.com</p>
+      <p>Horario de Atención: Lunes a Viernes, 9:00 a.m. - 6:00 p.m.</p>
+      <div class="redes-sociales">
+        <a href="#"><img src="facebook.jpg" alt="Facebook"></a>
+        <a href="#"><img src="twitter.jpg" alt="Twitter"></a>
+        <a href="#"><img src="whatsapp.jpg" alt="whatsapp"></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2023 AluDiseños. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
